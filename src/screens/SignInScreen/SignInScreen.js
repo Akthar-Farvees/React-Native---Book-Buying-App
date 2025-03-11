@@ -32,7 +32,7 @@ const SignInScreen = () => {
   
   
   return (
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ flexGrow: 1 }} >
         <View style={Styles.root}>
             <Image 
                 source={Logo} 
@@ -44,6 +44,7 @@ const SignInScreen = () => {
                 placeholder="Username" 
                 value={username} 
                 setValue={setUsername} 
+                style={Styles.usernameInput}
             />
 
             <CustomInput 
@@ -51,6 +52,7 @@ const SignInScreen = () => {
                 value={password} 
                 setValue={setPassword} 
                 secureTextEntry={true}
+                style={Styles.passwordInput}
             />
 
             <CustomButton text="Sign In" onPress={onSignInPressed}/>
@@ -76,13 +78,17 @@ const SignInScreen = () => {
 
 const Styles = StyleSheet.create({
     root: {
-        alignItems: 'center',
+        alignItems: 'center', // Aligns items vertically in the center
+        justifyContent: 'flex-start', // Aligns items at the top of the container
         padding: 30,
-        
+        marginTop: 40,
+        backgroundColor: 'white',
+        flex: 1,
+        display: 'flex',
     },
 
     logo: {
-        width: '90%',
+        width: '80%',
         maxWidth: 300,
         maxHeight: 300,
     },

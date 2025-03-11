@@ -30,10 +30,10 @@ const Styles = StyleSheet.create({
     width: '100%',
 
     padding: 15,
-    marginVertical: 15,
+    marginVertical: 12,
 
     alignItems: 'center',
-    borderRadius: 30,
+    borderRadius: 6,
    },
 
    container_PRIMARY : {

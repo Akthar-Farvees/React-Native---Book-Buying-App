@@ -25,16 +25,19 @@ const Styles = StyleSheet.create({
         height: 40,
         
        
-        borderColor:'#051C60',
+        borderColor:'#ced6e0',
         borderWidth: 1,
-        borderRadius: 20,
+        borderRadius: 6,
 
-        paddingHorizontal: 15,
+        
+        paddingHorizontal: 11,
         marginVertical: 7,
     },
 
     input: {
         marginTop: 4,
+        padding: 10,
+        color: 'black'
     },
 });
 

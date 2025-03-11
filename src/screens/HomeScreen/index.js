@@ -172,7 +172,7 @@ const style = StyleSheet.create({
 
     searchContainer: {
         height: 50,
-        backgroundColor: '#F1F1F1',
+        backgroundColor: '#f1f2f6',
         borderRadius: 10,
         flex: 1,
         flexDirection: 'row',
@@ -217,7 +217,7 @@ const style = StyleSheet.create({
 
     card: {
         height: 225,
-        backgroundColor: '#F1F1F1',
+        backgroundColor: '#f5f6fa',
         width,
        
         marginHorizontal: 2,
